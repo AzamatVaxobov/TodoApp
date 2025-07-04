@@ -22,9 +22,3 @@ Before you can run the application, ensure you have the following installed:
 
 ---
 
-## How to Run the Application 💻
-### Steps:
-1. **Clone the Repository**:
-   ```bash
-   git clone <your-repo-url>
-   cd TodoApp
