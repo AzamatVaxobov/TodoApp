@@ -2,6 +2,8 @@
 using Microsoft.EntityFrameworkCore;
 using TodoApp.DataAccess;
 using TodoApp.Server.Configurations;
+using TodoApp.Service.Interfaces;
+using TodoApp.Service.Services;
 
 namespace TodoApp.Server
 {
@@ -19,7 +21,7 @@ namespace TodoApp.Server
             builder.Services.AddSwaggerGen();
 
             builder.Services.ConfigureDatabase(builder.Configuration);
-
+            builder.Services.AddApplicationServices();
 
 
             var app = builder.Build();
